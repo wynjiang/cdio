@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f2f2;
+}
+
+nav {
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 30px;
+    border: 1px solid #ac8181;
+}
+
+.left-menu {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    margin-right: 10px;
+    max-height: 25px;
+    height: auto;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'League Gothic', monospace;
+}
+
+.menu-tab {
+    position: fixed;
+    top: 51px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 20px;
+    height: calc(100vh - 60px);
+    border: 1px solid #ac8181;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ac8181;
+}
+
+.menu-tab img {
+    width: 35px;
+    height: auto;
+    margin: 30px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header-container img {
+    width: 120px;
+    height: 180px;
+    margin: 0 10px;
+}
+
+h1 {
+    font-family: 'Langar', monospace;
+    color: blue;
+    font-size: 35px;
+    margin: 0;
+    font-style: oblique;
+}
+
+
+.language-dropdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.language-dropdown select {
+    font-family: 'Langar', monospace;
+    padding: 10px;
+    color: #5D58B6;
+    font-size: 14px;
+    border: 1px solid #ac8181;
+    border-radius: 5px;
+    margin: 0 380px;
+}
+
+.language-dropdown select:focus {
+    border-color: #ac8181;
+    outline: none;
+}
+
+.language-dropdown select:hover {
+    border-color: #9a7373;
+}
+
+.translation-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.translation-box1,
+.translation-box2 {
+    font-family: 'Langar', monospace;
+    border: 1px solid #ac8181;
+    padding: 15px;
+    width: 450px;
+    height: 220px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+.translation-box1 {
+    border-top-right-radius: 20px;
+}
+
+.translation-box2 {
+    border-top-left-radius: 20px;
+}
+
+.translation-box1 p,
+.translation-box2 p {
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa nút */
+    margin: 20px;
+}
+
+.translator-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 25px;
+    background-color: #ac8181;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+
+.translator-button:hover {
+    background-color: #ac8181;
+    transform: scale(1.05);
+}
+
+.translator-button:active {
+    transform: scale(0.95);
+}
